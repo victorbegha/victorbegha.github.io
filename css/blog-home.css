@@ -1,0 +1,43 @@
+/*!
+ * Start Bootstrap - Blog Home (https://startbootstrap.com/template-overviews/blog-home)
+ * Copyright 2013-2017 Start Bootstrap
+ * Licensed under MIT (https://github.com/BlackrockDigital/startbootstrap-blog-home/blob/master/LICENSE)
+ */
+
+
+.container {
+	max-width: 100%;
+}
+
+ 
+.masthead {
+  
+  background: no-repeat center center;
+  background-color: #868e96;
+  background-attachment: fixed;
+  
+  position: relative;
+  background-size: cover;
+}
+
+.masthead .overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  background-color: #212529;
+  opacity: 0.5;
+}
+
+.masthead .page-heading,
+.masthead .post-heading,
+.masthead .site-heading {
+  padding: 200px 0 150px;
+  color: white;
+}
+
+#blogColumn {
+	padding-top: 40px;	
+	
+}
