@@ -9,15 +9,20 @@
 	max-width: 100%;
 }
 
- 
+.halfline {
+	line-height: .1em;
+}
+
+
 .masthead {
   
   background: no-repeat center center;
   background-color: #868e96;
-  background-attachment: fixed;
+  background-attachment: local;
   
   position: relative;
   background-size: cover;
+  border: 0;
 }
 
 .masthead .overlay {
@@ -30,10 +35,24 @@
   opacity: 0.5;
 }
 
+.about {
+	padding: 50px 0 100px;
+	background-color: white;
+	color: #212529;
+	text-align: center;
+}
+.about .col-md-6 {
+	padding: 0 100px 0 100px;
+}
+.about ul {
+	padding: 0; 
+	list-style: none;
+}
+
 .masthead .page-heading,
 .masthead .post-heading,
 .masthead .site-heading {
-  padding: 200px 0 150px;
+  padding: 100px 0 100px;
   color: white;
 }
 

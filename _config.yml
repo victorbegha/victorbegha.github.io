@@ -87,6 +87,7 @@ exclude:
   - CNAME
    
 
-paginate: 6
+paginate: 3
 paginate_path: /page:num/
 
+imgUrl: /img/
