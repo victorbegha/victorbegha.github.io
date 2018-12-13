@@ -22,7 +22,8 @@
     <link href="{{ root_url }}/css/blog-home.css" rel="stylesheet">
 	<link href="{{ root_url }}/css/pagination.css" rel="stylesheet">
 	
-	
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
 	
 	
 
@@ -33,38 +34,11 @@
 
   </head>
 
-  <body>
+  <body data-spy="scroll">
 
-    <!-- Navigation 
-    <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
-      <div class="container">
-        <a class="navbar-brand" href="#">Start Bootstrap</a>
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
-          <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarResponsive">
-          <ul class="navbar-nav ml-auto">
-            <li class="nav-item active">
-              <a class="nav-link" href="#">Home
-                <span class="sr-only">(current)</span>
-              </a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#">About</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#">Services</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#">Contact</a>
-            </li>
-          </ul>
-        </div>
-      </div>
-    </nav>-->
 	
-	<a href="{{site.url}}" style="text-decoration:none">
 	<div class="container">
+	<a href="{{site.url}}" style="text-decoration:none">
 		<div class="row masthead" style="background-image: url('{{ root_url }}/img/home-bg.jpg')">
 			  <div class="col-lg-8 col-md-10 mx-auto">
 				<div class="site-heading">
@@ -73,26 +47,43 @@
 				</div>
 			  </div>
 		</div>	
-	
-	</div>
 	</a>
+	</div>
+
+
+	<div class="container" data-spy="affix" data-offset-top="320">
+		<div class="row navRow">
+			<div class="col-md-3" ><a href="{{site.url}}"><h6>Início</h6></a></div></a>
+			<div class="col-md-3" ><a href="{{ root_url }}/curriculo""><h6>Currículo profissional</h6></a></div>
+			<div class="col-md-3" ><a href="#blog"><h6>Blog</h6></a></div>
+			<div class="col-md-3" ><a href="#"><h6>Contato</h6></a></div>
+		</div>
+	</div>
+	
+	<div class="container">
+		<div class="row navMob">
+		  <input type="image" style="height:50px" src="{{ root_url }}/img/site/navbutton.png" data-toggle="collapse" data-target="#mobNavList"/>
+		</div>
+	</div>
+	
+	<div class="collapse navbar-collapse" id="mobNavList">
+		  <ul class="nav navbar-nav">
+			<li><a href="#">Início</a></li>
+			<li><a href="#">Currículo profissional</a></li>
+			<li><a href="#">Blog</a></li>
+			<li><a href="#">Contato</a></li>
+		  </ul>
+	</div>
 	
 	<div class="container">
 		<div class="row about">
-			  <div class="col-md-6">
+			  <div class="col-md-6" >
 					<p>Olá!<br/>Sou aluno de Engenharia de Computação na Universidade Estadual de Ponta Grossa. Aqui eu
 					escrevo sobre projetos em que estou trabalhando, experiências na universidade e algumas outras coisas
 					que me interessam.</p>
 					<b>Site em construção.</b>
 			  </div>
-			  <div class="col-md-6">
-				    <ul>
-						<li><a href="{{ root_url }}/curriculo"><b>Currículo profissional</b></a></li>
-						<li><a href="#"><b>Contato</b></a></li>
-						<li><a href="#blog"><b>Blog</b></a></li>
-					</ul>
 
-			  </div>
 		</div>	
 	
 	</div>

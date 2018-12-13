@@ -22,7 +22,8 @@
     <link href="{{ root_url }}/css/blog-home.css" rel="stylesheet">
 	<link href="{{ root_url }}/css/pagination.css" rel="stylesheet">
 	
-	
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
 	
 	
 
@@ -76,6 +77,30 @@
 	
 	</div>
 	</a>
+	
+	<div class="container" data-spy="affix" data-offset-top="320">
+		<div class="row navRow">
+			<div class="col-md-3" ><a href="{{site.url}}"><h6>Início</h6></a></div></a>
+			<div class="col-md-3" ><a href="{{ root_url }}/curriculo""><h6>Currículo profissional</h6></a></div>
+			<div class="col-md-3" ><a href="#blog"><h6>Blog</h6></a></div>
+			<div class="col-md-3" ><a href="#"><h6>Contato</h6></a></div>
+		</div>
+	</div>
+	
+	<div class="container">
+	<div class="row navMob">
+	  <input type="image" style="height:50px" src="{{ root_url }}/img/site/navbutton.png" data-toggle="collapse" data-target="#mobNavList"/>
+	</div>
+	</div>
+	
+	<div class="collapse navbar-collapse" id="mobNavList">
+			  <ul class="nav navbar-nav">
+				<li><a href="#">Início</a></li>
+				<li><a href="#">Currículo profissional</a></li>
+				<li><a href="#">Blog</a></li>
+				<li><a href="#">Contato</a></li>
+			  </ul>
+		</div>
 	
 
     <!-- Page Content -->
